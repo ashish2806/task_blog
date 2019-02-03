@@ -9,11 +9,11 @@
 {{ csrf_field() }}
   <div class="form-group">
     <label for="exampleInputEmail1">Title</label>
-    <input type="text" class="form-control"  placeholder="Title" name="title" />
+    <input type="text" class="form-control"  placeholder="Title" name="title" value="{{ old('title') }}"/>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Body</label>
-    <input type="text" class="form-control" placeholder="Body" name="body"/>
+    <input type="text" class="form-control" placeholder="Body" name="body" value="{{ old('body') }}/>
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>
