@@ -19,7 +19,7 @@ class CommentsController extends Controller
 
     {	
     	$this->validate(request(),[
-    			'body'=>'required|min:5'
+    			'body'=>'required'
     	]);
 		$posts->addComment(request('body'),$post->id);
 		return back();
