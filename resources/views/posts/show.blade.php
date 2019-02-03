@@ -39,7 +39,7 @@
             <!-- add comment-->
             <div class="card">
               <div class="card-block">
-                   
+
               <form method="POST" action="/posts/{{ $post->id }}/comments">
               {{ csrf_field() }}
               <div class="form-group">
@@ -50,7 +50,7 @@
               </div>
               </form>
               @include('layout.error')
-              
+
               </div>
             </div>
           </div><!-- /.blog-post -->
