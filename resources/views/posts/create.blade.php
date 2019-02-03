@@ -13,7 +13,7 @@
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Body</label>
-    <input type="text" class="form-control" placeholder="Body" name="body" value="{{ old('body') }}/>
+    <input type="text" class="form-control" placeholder="Body" name="body" value="{{ old('body') }}"/>
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>
